@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Adote com Amor{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="dark">
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/logo.png' %}" alt="Logo" height="60"> <p class="logo-text">Adote com amor</p>
+        </div>
+        <nav>
+            <a href="{% url 'core:index' %}">Início</a>
+            <a href="{% url 'animais:lista' %}">Animais</a>
+            <a href="{% url 'core:sobre' %}">Sobre</a>
+            <a href="{% url 'core:contato' %}">Contato</a>
+            <a href="{% url 'blog:lista' %}">Notícias</a>
+
+            {% if user.is_authenticated %}
+                <a href="{% url 'accounts:perfil' %}">Meu Perfil</a>
+                <a href="{% url 'adocao:meus_pedidos' %}">Meus Pedidos</a>
+                <a href="{% url 'divulgar:novo' %}">Divulgar Animal</a>
+                <a href="{% url 'divulgar:meus_animais' %}">Meus Animais</a>
+            {% else %}
+                <a href="{% url 'accounts:login' %}">Entrar</a>
+
+            {% endif %}
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="rodape">
+        <div class="container-rodape">
+           <p>&copy; 2025 Adote com Amor – Todos os direitos reservados.</p>
+
+            <nav class="nav-rodape">
+               <a href="{% url 'core:sobre' %}">Sobre</a>
+               <a href="{% url 'core:contato' %}">Contato</a>
+               <a href="{% url 'blog:lista' %}">Blog</a>
+               <a href="{% url 'accounts:login' %}">Entrar</a>
+            </nav>
+
+            <div class="redes-sociais">
+               <a href="https://instagram.com/adotecomamor" target="_blank">Instagram</a> |
+               <a href="https://facebook.com/adotecomamor" target="_blank">Facebook</a> |
+               <a href="mailto:contato@adotecomamor.org">Email</a>
+            </div>
+
+            <p style="margin-top: 1rem;">Desenvolvido por Bruna Ribeiro, Antônia Nilsa, Gabriel Ferreira e Leandra Maciel.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

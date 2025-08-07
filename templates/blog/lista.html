@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+
+
+<div class="container-cards-blog">
+    <h2 class="blog-title">Dicas e Notícias</h2>
+    <div class="blog-grid">
+        {% for post in posts %}
+            <div class="blog-card">
+                <a href="{% url 'blog:detalhe' post.slug %}">
+                    {% if post.imagem %}
+                        <img src="{{ post.imagem.url }}" alt="{{ post.titulo }}">
+                    {% else %}
+                        <div class="blog-placeholder">Sem imagem</div>
+                    {% endif %}
+                    <div class="blog-card-content">
+                        <h3>{{ post.titulo }}</h3>
+                        <p class="blog-date">Publicado em {{ post.criado_em|date:"d/m/Y" }}</p>
+                    </div>
+                </a>
+            </div>
+        {% empty %}
+            <p>Nenhuma postagem ainda.</p>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

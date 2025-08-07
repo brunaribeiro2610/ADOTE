@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+{% block title %}{{ post.titulo }} | Blog{% endblock %}
+
+{% block content %}
+<section class="blog-detalhe">
+    <div class="container">
+        <article class="post-detalhe">
+            <h1 class="titulo">{{ post.titulo }}</h1>
+            <div class="info">
+                <span class="data">📅 {{ post.data_publicacao|date:"d/m/Y" }}</span>
+                <span class="autor">✍️ {{ post.autor }}</span>
+            </div>
+            <div class="conteudo">
+                {{ post.conteudo|linebreaks }}
+            </div>
+
+            <div class="voltar">
+
+                <a href="{% url 'blog:lista' %}" class="btn-voltar para o blog">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+                </svg>
+                Voltar
+                </a>
+            </div>
+        </article>
+
+        <hr class="divisor">
+
+        <section class="leia-tambem">
+            <h2>Leia também</h2>
+            <ul>
+                {% for outro in outros_posts %}
+                    {% if outro.id != post.id %}
+                        <li><a href="{% url 'blog:detalhe' outro.slug %}">{{ outro.titulo }}</a></li>
+                    {% endif %}
+                {% empty %}
+                    <li>Nenhum outro post disponível.</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</section>
+{% endblock %}

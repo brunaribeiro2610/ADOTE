@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% block title %}Quero Adotar{% endblock %}
+{% block content %}
+
+<div class="containe_adotar">
+    <h2>Quero Adotar {{ animal.nome }}</h2>
+
+    <table class="adotar_animal">
+        <tr>
+            <!-- Coluna da imagem (ocupa 2 linhas) -->
+            <td rowspan="2">
+                <img src="{{ animal.foto.url }}" width="300">
+            </td>
+            
+            <!-- Primeira linha da segunda coluna: descrição -->
+            <td>
+                <p>{{ animal.descricao }}</p>
+            </td>
+        </tr>
+        <tr>
+            <!-- Segunda linha da segunda coluna: formulário -->
+            <td>
+                <form class="adt" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+    <!--
+    <table class="adotar_animal">
+        <tr>
+            <td rowspan="2">
+                <img src="{{ animal.foto.url }}" width="300">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <p>{{ animal.descricao }}</p>
+            </td>
+            <td>
+                <form class="adt" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+-->
+
+    
+    
+
+</div>
+
+{% endblock %}

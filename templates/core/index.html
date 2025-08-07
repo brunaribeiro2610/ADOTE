@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+{% block title %}Início{% endblock %}
+{% block content %}
+
+<!-- Carrossel de Imagens -->
+  <div class="carousel-container">
+    <div class="carousel-slide" id="carousel-slide">
+      <img src="./static/img/dogao.jpg" alt="Imagem-cachorro">
+      <img src="./static/img/coelho.jpg" alt="Imagem">
+      <img src="./static/img/dog.jpg" alt="Imagem 3">
+      <img src="./static/img/gatao.jpg" alt="Imagem 4">
+      <img src="./static/img/dogao.jpg" alt="Imagem-cachorro">
+    </div>
+  </div>
+
+  <!-- Conteúdo da Home -->
+  <section class="home-content">
+    <h1>Bem-vindo ao <strong>Adote com amor</strong> — Um lar cheio de amor para todos os pets</h1>
+    
+    <p>Aqui, cada patinha tem uma história e espera por uma família que a acolha com carinho e compromisso. Nosso propósito é unir corações, promovendo adoções responsáveis e conscientes para transformar vidas — tanto de humanos quanto de animais.</p>
+
+    <ul>
+      <li>🐾 Está pensando em adotar um novo amigo para compartilhar momentos inesquecíveis?</li>
+      <li>🐾 Quer ajudar divulgando um animal que merece um lar cheio de amor?</li>
+      <li>🐾 Ou simplesmente deseja conhecer histórias inspiradoras e aprender dicas valiosas para cuidar melhor dos seus pets?</li>
+    </ul>
+
+    <p>Você chegou ao lugar certo! Explore nossas páginas, descubra nossos peludinhos disponíveis para adoção e junte-se a essa linda corrente do bem.</p>
+
+    <h3><strong>Adote, divulgue, transforme vidas — juntos somos mais fortes!</strong></h3>
+  </section>
+
+  <!-- JavaScript do Carrossel -->
+  <script>
+    const slide = document.getElementById('carousel-slide');
+    const totalSlides = 4;
+    let index = 0;
+
+    function nextSlide() {
+      index = (index + 1) % totalSlides;
+      slide.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(nextSlide, 4000); // muda a cada 4 segundos
+  </script>
+
+
+{% endblock %}
