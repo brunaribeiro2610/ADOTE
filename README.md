@@ -67,7 +67,10 @@ python manage.py runserver
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## ✨ Autores
-* **Bruna Ribeiro** - *Desenvolvedora Principal* - [@seu-usuario](https://github.com/seu-usuario)
+**Bruna Ribeiro** 
+**Antônia Nilsa** 
+**Gabriel Ferreira**
+**Leandra Maciel**
 
 ## 📄 Status do Projeto
 🚧 Em desenvolvimento... 🚧
