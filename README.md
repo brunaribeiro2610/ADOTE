@@ -64,6 +64,11 @@ python manage.py runserver
 *Inclua aqui imagens das principais telas do sistema, como página inicial, cadastro de animal, perfil do usuário, etc.*
 ![Diagrama de Classes](https://raw.githubusercontent.com/brunaribeiro2610/ADOTE/main/media/class_diagram.png)
 ![Diagrama de caso de uso](https://github.com/brunaribeiro2610/ADOTE/blob/ab411a677fc0f81dc9f57383864852082077289e/media/diagrama_caso_uso.jpg)
+![Pagina inicial](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/adote%20inicio.png)
+![Pagina adote animais](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/adote%20animais.png)
+![Pagina noticias](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/noticias.png)
+![Pagina login](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/divulgar.png)
+![Pagina divulgar](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/divulgar.png)
 ## 🤝 Contribuindo
 1. Faça um Fork do projeto
 2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
