@@ -60,16 +60,32 @@ python manage.py runserver
 3. Cadastre animais disponíveis para adoção ou procure por animais.
 4. Utilize o sistema de mensagens para entrar em contato com os responsáveis.
 
-## 📊 Exemplo de Telas
-*Inclua aqui imagens das principais telas do sistema, como página inicial, cadastro de animal, perfil do usuário, etc.*
-![Diagrama de Classes](https://raw.githubusercontent.com/brunaribeiro2610/ADOTE/main/media/class_diagram.png)
-![Diagrama de caso de uso](https://github.com/brunaribeiro2610/ADOTE/blob/ab411a677fc0f81dc9f57383864852082077289e/media/diagrama_caso_uso.jpg)
-![Pagina inicial](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/adote%20inicio.png)
-![Pagina adote animais](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/adote%20animais.png)
-![Pagina noticias](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/noticias.png)
-![Pagina login](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/divulgar.png)
-![Pagina divulgar](https://github.com/brunaribeiro2610/ADOTE/blob/main/media/divulgar.png)
-## 🤝 Contribuindo
+
+## 📊 Telas do Sistema
+
+### Tela de Login
+A tela de login permite que usuários acessem suas contas de forma segura.
+![Tela de Login](media/login.png)
+
+
+### Tela Principal
+Interface principal do sistema.
+![Tela Principal](media/principal.png)
+
+### Tela de Divulgação
+Permite cadastrar novos pets para adoção com fotos e informações.
+![Tela de Divulgação](media/divulgar.png)
+
+### Tela de Noticias
+Mostra noticias que pode ser importante.
+![Tela de noticia](media/noticias.png)
+
+### Diagramas
+Representação da estrutura do sistema.
+![Diagrama de Classes](media/class_diagram.png)
+![Diagrama caso de uso](media/diagrama_caso_uso.jpg)
+
+
 1. Faça um Fork do projeto
 2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
 3. Faça o Commit das suas mudanças (`git commit -m 'feat: NovaFeature'`)
