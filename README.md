@@ -5,6 +5,13 @@ O **ADOTE** é um sistema web desenvolvido para facilitar o processo de adoção
 
 O objetivo é tornar o processo de adoção mais transparente, seguro e acessível, promovendo o bem-estar animal e incentivando a adoção responsável.
 
+## 👩‍💻 Autoria
+Este projeto foi idealizado e desenvolvido por:
+- **Bruna Ribeiro**
+- **Antônia Nilsa**
+- **Gabriel Ferreira**
+- **Leandra Maciel**
+
 ## 🚀 Funcionalidades
 - Cadastro e gerenciamento de animais para adoção
 - Cadastro de usuários (ONGs, tutores e adotantes)
@@ -56,6 +63,7 @@ python manage.py runserver
 ## 📊 Exemplo de Telas
 *Inclua aqui imagens das principais telas do sistema, como página inicial, cadastro de animal, perfil do usuário, etc.*
 ![Diagrama de Classes](https://raw.githubusercontent.com/brunaribeiro2610/ADOTE/main/media/class_diagram.png)
+
 ## 🤝 Contribuindo
 1. Faça um Fork do projeto
 2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
@@ -66,14 +74,8 @@ python manage.py runserver
 ## 📝 Licença
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## ✨ Autores
-**Bruna Ribeiro** 
-**Antônia Nilsa** 
-**Gabriel Ferreira**
-**Leandra Maciel**
-
 ## 📄 Status do Projeto
 🚧 Em desenvolvimento... 🚧
 
 ---
-⌨️ com ❤️ [Bruna Ribeiro]
+⌨️ com ❤️ [Bruna Ribeiro, Antônia Nilsa, Gabriel Ferreira e Leandra Maciel]
