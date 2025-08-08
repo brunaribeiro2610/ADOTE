@@ -63,7 +63,7 @@ python manage.py runserver
 ## 📊 Exemplo de Telas
 *Inclua aqui imagens das principais telas do sistema, como página inicial, cadastro de animal, perfil do usuário, etc.*
 ![Diagrama de Classes](https://raw.githubusercontent.com/brunaribeiro2610/ADOTE/main/media/class_diagram.png)
-
+https://drive.google.com/drive/my-drive?hl=pt-br
 ## 🤝 Contribuindo
 1. Faça um Fork do projeto
 2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
